@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CALCULATE</title>
+  <link rel="stylesheet" href="styles.css" type="text/css">
+  <link rel="stylesheet" href="styles_RPM.css" type="text/css">
+  <script src="calculate.js"></script>
+</head>
+
+
+<body>
+  <h1>Speed and Feed Help App </h1>
+  <div class="myClass">
+
+    <p>Calculate Tool RPM</p>
+    <form name="formCal">
+      <br> Enter SFM:
+      <br>
+      <input type="text" name="SFM" placeholder="Enter SFM">
+      <br> Enter Tool Dia:
+      <br>
+      <input type="text" name="Dia" placeholder="Enter Dia">
+      <br> Result
+      <br>
+      <input type="text" name="txtRes" placeholder="Result">
+      <br>
+
+      <input type="button" value="Calculate RPM" onclick="sumValues()">
+
+      <input type="button" value="Clear Values" onclick="clearValues()">
+    </form>
+
+  </div>
+
+</body>
+
+
+
+<body>
+  <div class="classConvert">
+
+    <p>Convert Inch or Milimeters</p>
+
+
+
+    <form name="formConvert">
+      <br> Enter Inch:
+      <br>
+      <input type="text" name="IN" placeholder="Enter Inch">
+      <br> Enter Milimeters:
+      <br>
+      <input type="text" name="MM" placeholder="Enter MM">
+      <br> Result
+      <br>
+      <input type="text" name="txtResConvert" placeholder="Result">
+      <br>
+
+      <input type="button" value="Convert" onclick="convertValues()">
+
+      <input type="button" value="Clear Values" onclick="clearValues()">
+    </form>
+
+  </div>
+
+</body>
+
+
+
+<body>
+  <div class="classFeedSpeed">
+
+    <p>Calculate Feed Rate</p>
+
+    <form name="formSpeedFeed">
+      <br> Enter RPM:
+      <br>
+      <input type="text" name="RPM_Feeds" placeholder="Enter RPM">
+      <br> Enter Number Flutes:
+      <br>
+      <input type="text" name="Flutes_Nr" placeholder="Enter Nr Flutes">
+      <br> Enter Chip Load:
+      <br>
+      <input type="text" name="Chip_Load" placeholder="Enter Chip Load">
+      <br> Result
+      <br>
+      <input type="text" name="txtFeedResult" placeholder="Result">
+      <br>
+      <input type="button" value="Calculate Feeds" onclick="calculateFeeds()">
+      <input type="button" value="Clear Values" onclick="clearValues()">
+    </form>
+
+  </div>
+
+</body>
+
+
+
+
+</html>
