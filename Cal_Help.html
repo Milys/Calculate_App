@@ -16,7 +16,7 @@
   <h1>Speed and Feed Help App </h1>
   <div class="myClass">
 
-    <p>Calculate Tool RPM</p>
+    <p>Calculate RPM</p>
     <form name="formCal">
       <br> Enter SFM:
       <br>
@@ -89,7 +89,7 @@
       <br>
       <input type="text" name="txtFeedResult" placeholder="Result">
       <br>
-      <input type="button" value="Calculate Feeds" onclick="calculateFeeds()">
+      <input type="button" value="Calculate Feeds" onclick="calculateRPM()">
       <input type="button" value="Clear Values" onclick="clearValues()">
     </form>
 
@@ -97,6 +97,34 @@
 
 </body>
 
+<body>
+  <div class="classBevel">
+
+    <p>Calculate Bevel Dia</p>
+
+    <form name="formBevel">
+      <br> Enter Bevel Dia:
+      <br>
+      <input type="text" name="bevelDia" placeholder="Enter Bevel Dia">
+      <br> Enter Tool Dia:
+      <br>
+      <input type="text" name="toolDia" placeholder="Enter Tool Dia">
+      <br> Enter Tool Angle:
+      <br>
+      <input type="text" name="bevelAngle" placeholder="Enter Tool Angle">
+      <br> Tool Depth Result
+      <br>
+      <input type="text" name="toolDepth" placeholder="Tool Depth Result">
+      <br>
+
+      <input type="button" value="Calculate Depth" onclick="calculateDepth()">
+
+      <input type="button" value="Clear Values" onclick="clearValues()">
+    </form>
+
+  </div>
+
+</body>
 
 
 

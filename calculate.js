@@ -11,7 +11,7 @@ function sumValues() {
 
 }
 
-//in and mm
+//convert in and mm
 
 var numIN, numMM, resConvert;
 
@@ -31,13 +31,15 @@ function convertValues() {
     }
 }
 
-var RPM_Feeds, Flutes_Nr, RPM_Feeds;
+// calculate feed rate
+var numRPM, numFlutes, numChips, feedResult;
+
 function calculateRPM (){
-    RPM_Feeds = Number(document.formCal.SFM.value);
-    Flutes_Nr = Number(document.formCal.Dia.value);
-    Chip_Load = Number(document.formSpeedFeed.Chip_Load.value);
-    txtFeedResult = (RPM_Feeds * Flutes_Nr * RPM_Feeds);
-    document.formSpeedFeed.txtFeedResult.value = txtFeedResult;
+    numRPM = Number(document.formSpeedFeed.RPM_Feeds.value);
+    numFlutes = Number(document.formSpeedFeed.Flutes_Nr.value);
+    numChips = Number(document.formSpeedFeed.Chip_Load.value);
+    Result = (numRPM * numFlutes * numChips);
+    document.formSpeedFeed.txtFeedResult.value = Result;
 
 }
 
