@@ -58,4 +58,9 @@ function clearValues() {
     document.formSpeedFeed.Chip_Load.value = "";
     document.formSpeedFeed.txtFeedResult.value = "";
 
+    document.formBevel.bevelDia.value = "";
+    document.formBevel.toolDia.value = "";
+    document.formBevel.bevelAngle.value = "";
+    document.formBevel.toolDepth.value = "";
+
 }
