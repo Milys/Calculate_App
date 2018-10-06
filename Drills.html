@@ -8,12 +8,19 @@
     <title>Document</title>
 </head>
 <body>
+    <button onclick="goBack()">Click to Go Back to Menu Page</button>
+    
+    <script>
+    function goBack() {
+        window.history.back();
+    }
+    </script>
         
         <div class="Drill_Size-container">
           <h2>Drill Size Inch & Metric</h2>
           
         
-          <table class="w3-table w3-striped">
+          <table class="drill_table">
             <tr>
               <th>Fraction</th>
               <th>Inch Size</th>

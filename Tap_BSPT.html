@@ -1,80 +1,88 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="taps.css" type="text/css">
+  <title>Document</title>
 </head>
 <body>
-    
 
-    <style>
-    table {
-        font-family: arial, sans-serif;
-        border-collapse: collapse;
-        width: 100%;
+    <button onclick="goBack()">Click to Go Back to Menu Page</button>
+    
+    <script>
+    function goBack() {
+        window.history.back();
     }
-    
-    td, th {
-        border: 1px solid #dddddd;
-        text-align: left;
-        padding: 8px;
-    }
-    
-    tr:nth-child(even) {
-        background-color: BLUE;
-    }
-    </style>
+    </script>
 
-
-    
-    <h2>PIPE TAP DRILL CHART FOR BSPT (WHITWORTH)</h2>
-    
-    <table>
-      <tr>
-        <th>TAP SIZE</th>
-        <th>TAP OD DIA</th>
-        <th>DRILL SIZE</th>
-        <th>CSINK SIZE</th>
+  <h2>PIPE TAP DRILL CHART FOR BSPT (WHITWORTH)</h2>
+  <table>
+    <tr>
+      <th>TAP SIZE</th>
+      <th>TAP OUTSIDE DIA</th>
+      <th>DRILL FRACTION SIZE</th>
+      <th>DRILL METRIC SIZE</th>
+      <th>C'SINK DIA SIZE</th>
+    </tr>
+    <tr>
+      <td>1/8-27</td>
+      <td>0.437</td>
+      <td>21/64 (0.3281)</td>
+      <td>11.86 mm</td>
+      <td>0.467</td>
+    </tr>
+    <tr>
+      <td>1/4-19</td>
+      <td>0.545</td>
+      <td>7/16 (0.4375)</td>
+      <td>11.11 mm</td>
+      <td>0.575</td>
+    </tr>
+    <tr>
+      <td>3/8-19</td>
+      <td>0.685</td>
+      <td>9/16 (0.5625)</td>
+        <td>14.29 mm</td>
+        <td>1.0925</td>
+    </tr>
+    <tr>
+      <td>1/2-14</td>
+      <td>0.854</td>
+      <td>11/16 (0.6875)</td>
+      <td>17.46 mm</td>
+      <td>1.0925</td>
+    </tr>
+    <tr>
+      <td>5/8-14</td>
+      <td>1....</td>
+        <td>1-1/16 (1.0625)</td>
+        <td>11.8618</td>
+        <td>1.0925</td>
+    </tr>
+    <tr>
+      <td>3/4-14</td>
+      <td>1....</td>
+        <td>1-1/16 (1.0625)</td>
+        <td>11.8618</td>
+        <td>1.0925</td>
+    </tr>
+    <tr>
+        <td>7/8-14</td>
+        <td>1....</td>
+        <td>1-1/16 (1.0625)</td>
+        <td>11.8618</td>
+        <td>1.0925</td>
       </tr>
       <tr>
-        <td>1/8-27</td>
-        <td>0.437</td>
-        <td>21/64  -  0.3281</td>
-        <td>0.467</td>
-      </tr>
-      <tr>
-        <td>1/4-19</td>
-        <td>Francisco Chang</td>
-        <td>Mexico</td>
-      </tr>
-      <tr>
-        <td>Ernst Handel</td>
-        <td>Roland Mendel</td>
-        <td>Austria</td>
-      </tr>
-      <tr>
-        <td>Island Trading</td>
-        <td>Helen Bennett</td>
-        <td>UK</td>
-      </tr>
-      <tr>
-        <td>Laughing Bacchus Winecellars</td>
-        <td>Yoshi Tannamuri</td>
-        <td>Canada</td>
-      </tr>
-      <tr>
-        <td>Magazzini Alimentari Riuniti</td>
-        <td>Giovanni Rovelli</td>
-        <td>Italy</td>
-      </tr>
-    </table>
-    
-
-    
-
-
-
+          <td>1-11</td>
+          <td>1....</td>
+          <td>1-1/8 (1.125)</td>
+          <td>11.8618</td>
+          <td>1.155</td>
+        </tr>
+  </table>
 </body>
 </html>
