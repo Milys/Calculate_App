@@ -5,3 +5,53 @@ body {
 ul {
     font-size: 25px;
 }
+.container {
+    display: grid;
+    width: 100vw;
+    height: 100vh; 
+   }
+   .container > div {
+    border: 2px solid #000; 
+   }
+   .gryffindor {
+    grid-area: gryffindor;
+    background-color: #C91018; 
+   }
+   .slytherin {
+    grid-area: slytherin;
+    background-color: #26A147; 
+   }
+   .ravenclaw {
+    grid-area: ravenclaw;
+    background-color: #005782; 
+   }
+   .hufflepuff {
+    grid-area: hufflepuff;
+    background-color: #FFD63C; 
+   }
+
+   .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+    "gryffindor slytherin slytherin ravenclaw"
+    "gryffindor slytherin slytherin ravenclaw"
+    "gryffindor hufflepuff hufflepuff ravenclaw" 
+   }
+
+   /* borders */
+   .container {
+    display: grid;
+    width: 100vw;
+    height: 100vh;
+    grid-template-areas:
+    "gryffindor slytherin slytherin ravenclaw"
+    "gryffindor slytherin slytherin ravenclaw"
+    "gryffindor hufflepuff hufflepuff ravenclaw";
+    grid-column-gap: 10px;
+    grid-row-gap: 15px;
+    grid-template-columns: 200px auto auto 200px;
+    align-items: stretch;
+    justify-items: stretch; 
+   }
