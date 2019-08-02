@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <body>
+
+        <div class="myClass">
+
+            <h2>Calculate RPM</h2>
+
+            Find Milling Surface Speeds (SFM)for HSS End Mills:
+            <select id="mySelect">
+                <option value="250">Aluminum - 250 SFM</option>
+                <option value="200">Brass - 100-200 SFM</option>
+                <option value="70000">Bronze - 30-80 SFM</option>
+                <option value="90">Cast Iron - Ductile - 90 SFM</option>
+                <option value="100">Cast Iron - Gray - 100 SFM</option>
+                <option value="120">Coper Alloy - Wrought - 120 SFM</option>
+                <option value="250">Magnesium Alloy - 250 SFM</option>
+                <option value="30">Stainless Steel - 30 SFM</option>
+                <option value="110">Steel - Mild Alloy - 110 SFM</option>
+                <option value="60">Steel - Hard Alloy - 60 SFM - </option>
+                <option value="60">Steel - Tool - 60 SFM</option>
+            </select>
+
+            <br> Find Milling Surface Speeds (SFM)for HSS Twist Drills:
+            <select id="mySelect">
+                <option value="250">Aluminum 6061 - 250 SFM</option>
+                <option value="200">Brass - 200 SFM</option>
+                <option value="70000">Bronz - 7000 SFM</option>
+                <option value="80">Cast Iron - Ductile - 80 SFM</option>
+                <option value="120">Cast Iron - Gray - 120 SFM</option>
+                <option value="70">Coper Alloy - Wrought - 70 SFM</option>
+                <option value="250">Magnesium Alloy - 250 SFM</option>
+                <option value="30">Stainless Steel - 30 SFM</option>
+                <option value="110">Steel - Mild Alloy - 110 SFM</option>
+                <option value="60">Steel - Hard Alloy - 60 SFM - </option>
+                <option value="60">Steel - Tool - 60 SFM</option>
+            </select>
+
+            <form name="formCal">
+                <br> Enter SFM:
+                <br>
+                <input type="text" name="SFM" placeholder="Enter SFM">
+                <br> Enter Tool Dia:
+                <br>
+                <input type="text" name="Dia" placeholder="Enter Dia">
+                Click the button :
+                <button type="button" onclick="myFunction()">To Show SFM</button>
+
+                <p id="demo"></p>
+
+
+                <br> Result
+                <br>
+                <input type="text" name="txtRes" placeholder="Result">
+                <br>
+
+                <input type="button" value="Calculate RPM" onclick="sumValues()">
+
+                <input type="button" value="Clear Values" onclick="clearValues()">
+            </form>
+
+        </div>
+
+    </body>
+
+    <body>
+
+
+
+        <script>
+            function myFunction() {
+                var x = document.getElementById("mySelect").value;
+                document.getElementById("demo").innerHTML = x;
+            }
+        </script>
+
+    </body>
+
+
+</body>
+
+</html>
